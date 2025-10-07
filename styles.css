@@ -46,7 +46,7 @@
 
 .site-title {
   flex: 1;
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -75,7 +75,7 @@
   color: var(--primary-color);
   margin-bottom: 0.5rem;
   letter-spacing: -0.03em;
-  text-align: center;
+  text-align: left;
 }
 /* Modern CSS Variables */
 :root {
