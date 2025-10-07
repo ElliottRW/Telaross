@@ -11,16 +11,14 @@
   justify-content: center;
 }
 
-.logo-img.logo-absolute {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+.logo-img.logo-centered {
+  display: block;
+  margin: 2rem auto 1.5rem auto;
   height: 120px;
   width: auto;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
   background: transparent;
-  z-index: 2;
 }
 
 .site-title {
@@ -108,34 +106,6 @@ body {
 }
 
 /* Layout */
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.logo {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-img {
-  height: 96px;
-  width: auto;
-  display: block;
-  margin: 0;
-  border-radius: 0.5rem;
-  box-shadow: var(--shadow);
-  background: transparent;
 }
 
 .logo h1 {
