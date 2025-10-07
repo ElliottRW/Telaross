@@ -134,10 +134,10 @@ body {
 .profile-section {
   background: var(--surface);
   border-radius: 1.5rem;
-  padding: 4rem 2rem;
+  padding: 4rem 3vw;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
-  width: 90vw;
+  width: 100%;
   max-width: 900px;
   margin: 2.5rem auto;
   display: flex;
@@ -146,7 +146,7 @@ body {
 }
 
 .profile-full {
-  width: 90vw;
+  width: 100%;
   max-width: 900px;
   border-radius: 1rem;
   margin: 2rem 0;
