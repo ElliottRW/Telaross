@@ -1,6 +1,85 @@
+/* Horizon font import (Google Fonts doesn't have Horizon, so use Orbitron as a close alternative) */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+
+.header {
+  position: relative;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img.logo-absolute {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  height: 120px;
+  width: auto;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  background: transparent;
+  z-index: 2;
+}
+
+.site-title {
+  font-family: "Orbitron", "Horizon", "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.5rem 0 1.5rem 0;
+}
+/* Header layout for logo right and centered title */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-title {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.logo-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-img {
+  height: 96px;
+  width: auto;
+  display: block;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  background: transparent;
+}
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
 /* Modern CSS Variables */
 :root {
-  --primary-color: #e53935; /* Red from logo */
+  --primary-color: #ff0400; /* Red from logo */
   --secondary-color: #b0b3b8; /* Muted grey */
   --text-primary: #222222;
   --text-secondary: #555555;
@@ -46,7 +125,7 @@ body {
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .logo-img {
@@ -64,6 +143,8 @@ body {
   font-weight: 600;
   color: var(--primary-color);
   letter-spacing: -0.025em;
+  text-align: center;
+  width: 100%;
 }
 
 .main {
@@ -83,10 +164,23 @@ body {
 /* Profile Section */
 .profile-section {
   background: var(--surface);
-  border-radius: 1rem;
-  padding: 3rem;
+  border-radius: 1.5rem;
+  padding: 4rem 2rem;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
+  width: 90vw;
+  max-width: 900px;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-full {
+  width: 90vw;
+  max-width: 900px;
+  border-radius: 1rem;
+  margin: 2rem 0;
 }
 
 .profile-info .name {
@@ -227,7 +321,7 @@ body {
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #ff6659;
+    --primary-color: #fc1500;
     --secondary-color: #b0b3b8;
     --text-primary: #f3f4f6;
     --text-secondary: #b0b3b8;
